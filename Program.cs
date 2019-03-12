@@ -6,7 +6,8 @@ namespace design
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      var processor = new Processor(() => { Console.WriteLine("Hello from the delegate!"); });
+      processor.Run();
     }
   }
 }
